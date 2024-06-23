@@ -1,5 +1,5 @@
 ## 簡介
-- [Demo Link]()
+- [Demo Link](https://tamytsai.github.io/BMI-calculator-using-Vue.js/)
 - 本專案為一台BMI計算機
 - 以HTML、CSS及JavaScript撰寫，為一頁式靜態網頁
 - 使用Tailwind CSS設計樣式，並達RWD效果
@@ -17,11 +17,11 @@
 ## 安裝
 ### 取得專案
 ```bash
-git clone 
+git clone https://github.com/TamyTsai/BMI-calculator-using-Vue.js.git
 ```
 ### 移動到專案內
 ```bash
-cd 
+cd BMI-calculator-using-Vue.js
 ```
 
 ## 資料夾及檔案說明
