@@ -3,17 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script> <!-- 經由cdn引入Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script> <!-- 經由cdn引入 Vue.js -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.7.8/vue.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> -->
+    <title>BMI計算器</title>
 </head>
 <body>
-    <div id="app">
-        <form action="" class="bg-white w-full max-w-md shadow-md m-5 p-4 rounded">
-          <label for="height" class="block">身高</label>
+    <div id="app" class="flex justify-center">
+        <form action="" class="bg-yellow-100 w-full max-w-md shadow-md m-5 p-4 rounded">
+          <div class="text-4xl flex justify-center">BMI計算器</div>
+          <label for="height" class="block mb-2">身高</label>
           <input type="text" v-model="height" id="height" class="rounded shadow border px-3 py-2 mb-2 w-full" placeholder="請輸入身高（單位：公分）" v-model="height">
-          <label for="weight" class="block">體重</label>
+          <label for="weight" class="block mb-2">體重</label>
           <input type="text" v-model="weight" id="weight" class="rounded shadow border px-3 py-2 mb-2 w-full" placeholder="請輸入體重（單位：公斤）" v-model="weight">
           <span class="block text-pink-500 text-6xl px-3">{{bmi}}</span>
         </form>
-      </div>
+    </div>
+    <script src="script.js"></script> <!-- 引入自己寫的js -->
 </body>
 </html>
