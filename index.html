@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <form action="" class="bg-white w-full max-w-md shadow-md m-5 p-4 rounded">
+          <label for="height" class="block">身高</label>
+          <input type="text" v-model="height" id="height" class="rounded shadow border px-3 py-2 mb-2 w-full" placeholder="請輸入身高（單位：公分）" v-model="height">
+          <label for="weight" class="block">體重</label>
+          <input type="text" v-model="weight" id="weight" class="rounded shadow border px-3 py-2 mb-2 w-full" placeholder="請輸入體重（單位：公斤）" v-model="weight">
+          <span class="block text-pink-500 text-6xl px-3">{{bmi}}</span>
+        </form>
+      </div>
+</body>
+</html>
